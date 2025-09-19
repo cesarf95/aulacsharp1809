@@ -1,0 +1,702 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            frutas.Add("Banana");
+            frutas.Add("Maça");
+            frutas.Add("Pessego");
+            frutas.Add("Morango");
+            frutas.Add("Uva");
+            frutas.Add("Tangerina");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            } ReadKey();
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            frutas.Add("Banana");
+            frutas.Add("Maça");
+            frutas.Add("Pessego");
+            frutas.Add("Morango");
+            frutas.Add("Uva");
+            frutas.Add("Tangerina");
+            WriteLine("frutas na lista");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo indice:");
+            WriteLine(frutas[4]);
+            ReadKey();
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            frutas.Add("Banana");
+            frutas.Add("Maça");
+            frutas.Add("Pessego");
+            frutas.Add("Morango");
+            frutas.Add("Uva");
+            frutas.Add("Tangerina");
+            WriteLine("frutas na lista");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo indice:");
+            WriteLine(frutas[4]);
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Pessego");
+            foreach(string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            ReadKey();
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            frutas.Add("Banana");
+            frutas.Add("Maça");
+            frutas.Add("Pessego");
+            frutas.Add("Morango");
+            frutas.Add("Uva");
+            frutas.Add("Tangerina");
+            WriteLine("frutas na lista");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo indice:");
+            WriteLine(frutas[4]);
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Pessego");
+            foreach(string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(3);
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            ReadKey();
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            frutas.Add("Banana");
+            frutas.Add("Maça");
+            frutas.Add("Pessego");
+            frutas.Add("Morango");
+            frutas.Add("Uva");
+            frutas.Add("Tangerina");
+            WriteLine("frutas na lista");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo indice:");
+            WriteLine(frutas[4]);
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Pessego");
+            foreach(string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(3);
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine($"Numero de elementos na lista: {frutas.Count}");
+            ReadKey();
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>(); //Cria uma lista. 
+            frutas.Add("Banana");//Adiciona itens a lista.
+            frutas.Add("Maça");//Item numero 1
+            frutas.Add("Pessego");//Item numero 2
+            frutas.Add("Morango");//Item numero 3
+            frutas.Add("Uva");//Item numero 4
+            frutas.Add("Tangerina");//Item numero 5
+            WriteLine("frutas na lista");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);//nome da variavel
+            }
+            WriteLine("Acessando pelo indice:");
+            WriteLine(frutas[4]);//Acessa o item pelo indice.
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Pessego");//Remove um item do indice/lista.
+            foreach(string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(3);//Remove uma posição especifica da lista/array.
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine($"Numero de elementos na lista: {frutas.Count}"); //faz a contagem dos elementos em uma lista/array.
+            ReadKey();
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Murilo de Lima Coutinho <murilo.l.coutinho@aluno.senai.br>
+21:01 (há 0 minuto)
+para mim
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ListasC_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            //Adicionando elementos à lista
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            frutas.Add("Limão");
+            WriteLine("Frutas na lista: ");
+            foreach(string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo índice:");
+            WriteLine(frutas[0]);
+
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Banana");
+            foreach(string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(0);
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            WriteLine("Mostrando frutas adicionadas novamente: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine($"O número de elementos na lista: {frutas.Count}");
+            bool temBanana = frutas.Contains("Banana");
+            if (temBanana == true)
+            {
+                WriteLine("Sua lista tem banana");
+            }
+            else
+            {
+                WriteLine("Sem banana!");
+            }
+            ReadKey();
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>(); //Cria uma lista. 
+            frutas.Add("Banana");//Adiciona itens a lista.
+            frutas.Add("Maça");//Item numero 1
+            frutas.Add("Pessego");//Item numero 2
+            frutas.Add("Morango");//Item numero 3
+            frutas.Add("Uva");//Item numero 4
+            frutas.Add("Tangerina");//Item numero 5
+            WriteLine("frutas na lista");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);//nome da variavel
+            }
+            WriteLine("Acessando pelo indice:");
+            WriteLine(frutas[4]);//Acessa o item pelo indice.
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Pessego");//Remove um item do indice/lista.
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(3);//Remove uma posição especifica da lista/array.
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta); 
+            }
+            WriteLine($"Numero de elementos na lista: {frutas.Count}"); //faz a contagem dos elementos em uma lista/array.
+            bool temBanana = frutas.Contains("Banana");
+            {
+                if (temBanana == true) {
+                }else if (temBanana == false)
+                {
+                    WriteLine("Sua lista tem banana");
+                }
+                else
+                {
+                    WriteLine("Não tem banana");
+                }
+            }
+            ReadKey();
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            //Adicionando elementos à lista
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            frutas.Add("Limão");
+            WriteLine("Frutas na lista: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo índice:");
+            WriteLine(frutas[0]);
+
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Banana");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(0);
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            WriteLine("Mostrando frutas adicionadas novamente: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine($"O número de elementos na lista: {frutas.Count}");
+            bool temBanana = frutas.Contains("Banana");
+            if (temBanana == true)
+            {
+                WriteLine("Sua lista tem banana");
+            }
+            else
+            {
+                WriteLine("Sem banana!");
+            }
+            ReadKey();
+            }
+            
+        }
+    }
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            //Adicionando elementos à lista
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            frutas.Add("Limão");
+            WriteLine("Frutas na lista: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo índice:");
+            WriteLine(frutas[0]);
+
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Banana");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(0);
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            WriteLine("Mostrando frutas adicionadas novamente: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine($"O número de elementos na lista: {frutas.Count}");
+            bool temBanana = frutas.Contains("Banana");
+            if (temBanana == true)
+            {
+                WriteLine("Sua lista tem banana");
+            }
+            else
+            {
+                WriteLine("Sem banana!");
+            }
+            int indiceLaranja = frutas.IndexOf("Laranja");
+            WriteLine($"O indice da banana é: {indiceLaranja}");
+            ReadKey();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            //Adicionando elementos à lista
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            frutas.Add("Limão");
+            WriteLine("Frutas na lista: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo índice:"); //Acessa o item pelo array/lista.
+            WriteLine(frutas[0]);
+
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Banana"); //Remove um item do indice/lista.
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(0); //Remove uma posição especifica da lista/array.
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            frutas.Add("Banana"); //Adiciona um item na lista
+            frutas.Add("Manga");
+            WriteLine("Mostrando frutas adicionadas novamente: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine($"O número de elementos na lista: {frutas.Count}"); //faz a contagem dos elementos em uma lista/array.
+            bool temBanana = frutas.Contains("Banana");
+            if (temBanana == true)
+            {
+                WriteLine("Sua lista tem banana");
+            }
+            else
+            {
+                WriteLine("Sem banana!");
+            }
+            WriteLine("Digite um nome de fruta:");
+            string frutaDigitada = ReadLine();
+            int indiceLaranja = frutas.IndexOf(frutaDigitada);
+            if (indiceLaranja <0)
+            {
+                WriteLine($"Esta fruta, {frutaDigitada} Nao esta na sua lista");
+            }
+            else
+            {
+                WriteLine($" O indice da {frutaDigitada} é : {indiceLaranja}");
+            }
+            int indicelaranja = frutas.IndexOf("Laranja");
+            WriteLine($"O indice da banana é: {indiceLaranja}");
+            ReadKey();
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            //Adicionando elementos à lista
+            frutas.Add("Banana");
+            frutas.Add("Manga");
+            frutas.Add("Limão");
+            WriteLine("Frutas na lista: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo índice:"); //Acessa o item pelo array/lista.
+            WriteLine(frutas[0]);
+
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("Banana"); //Remove um item do indice/lista.
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posição");
+            frutas.RemoveAt(0); //Remove uma posição especifica da lista/array.
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            frutas.Add("Banana"); //Adiciona um item na lista
+            frutas.Add("Manga");
+            WriteLine("Mostrando frutas adicionadas novamente: ");
+            foreach (string fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine($"O número de elementos na lista: {frutas.Count}"); //faz a contagem dos elementos em uma lista/array.
+            bool temBanana = frutas.Contains("Banana");
+            if (temBanana == true)
+            {
+                WriteLine("Sua lista tem banana");
+            }
+            else
+            {
+                WriteLine("Sem banana!");
+            }
+            WriteLine("Digite um nome de fruta:");
+            string frutaDigitada = ReadLine();
+            int indiceLaranja = frutas.IndexOf(frutaDigitada);
+            if (indiceLaranja <0)
+            {
+                WriteLine($"Esta fruta, {frutaDigitada} Nao esta na sua lista");
+            }
+            else
+            {
+                WriteLine($" O indice da {frutaDigitada} é : {indiceLaranja}");
+            }
+            int indicelaranja = frutas.IndexOf("Laranja");
+            WriteLine($"O indice da banana é: {indiceLaranja}");
+            ReadKey();
+        }
+    }
+}
+
+
+
+Exercicio 1
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     List <int> numeros = new List<int>();
+            numeros.Add (10);
+            numeros.Add (20);
+            numeros.Add (30);
+            WriteLine($"A Quantidade de elementos da lista é: {numeros.Count}");
+            ReadKey();
+        }
+        
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Exercicio 2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleAppLista
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> cidade = new List<string>();
+            cidade.Add("Maringá");
+            cidade.Add("Curitiba");
+            cidade.Add("Londrina");
+            WriteLine("Cidades na lista");
+            foreach (string cidade2 in cidade)
+            {
+                WriteLine($"Sua cidade favorita é: {cidade2}");
+            }
+            WriteLine(cidade[0]);
+            WriteLine(cidade[1]);
+            WriteLine(cidade[2]);
+        }
+    }
+}
